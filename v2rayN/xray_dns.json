@@ -1,0 +1,68 @@
+{
+  "servers": [
+    {
+      "tag": "dns_ir",
+      "address": "5.200.200.200",
+      "port": 53,
+      "domains": ["geosite:ir"],
+      "skipFallback": false
+    },
+    {
+      "tag": "dns_ir",
+      "address": "8.8.8.8",
+      "port": 53,
+      "domains": ["geosite:ir"],
+      "skipFallback": false
+    },
+    {
+      "tag": "doh_resolver",
+      "address": "1.1.1.1",
+      "domains": [
+        "domain:dns2.aminjamali.site",
+        "domain:dns1.aminjamali.site",
+        "domain:dns.aminjamali.site"
+      ],
+      "unexpectedIPs": ["geoip:private"],
+      "skipFallback": false
+    },
+    {
+      "tag": "doh_resolver",
+      "address": "8.8.8.8",
+      "domains": [
+        "domain:dns2.aminjamali.site",
+        "domain:dns1.aminjamali.site",
+        "domain:dns.aminjamali.site"
+      ],
+      "unexpectedIPs": ["geoip:private"],
+      "skipFallback": false
+    },
+    {
+      "tag": "dns_aminjamali",
+      "address": "https+local://dns.aminjamali.site/dns-query",
+      "unexpectedIPs": ["geoip:private"],
+      "skipFallback": false
+    },
+    {
+      "tag": "dns_aminjamali",
+      "address": "https+local://dns2.aminjamali.site/dns-query",
+      "unexpectedIPs": ["geoip:private"],
+      "skipFallback": false
+    },
+    {
+      "tag": "dns_aminjamali",
+      "address": "https+local://dns1.aminjamali.site/dns-query",
+      "unexpectedIPs": ["geoip:private"],
+      "skipFallback": false
+    },
+    "localhost"
+  ],
+  "queryStrategy": "UseIP",
+  "disableCache": false,
+  "serveStale": false,
+  "serveExpiredTTL": 0,
+  "disableFallback": false,
+  "disableFallbackIfMatch": false,
+  "enableParallelQuery": true,
+  "useSystemHosts": false,
+  "tag": "dns_inbound"
+}
