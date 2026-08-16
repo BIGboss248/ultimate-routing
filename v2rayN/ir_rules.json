@@ -1,0 +1,71 @@
+[
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "process": ["GoogleDriveFS.exe", "OneDrive.exe"],
+    "enabled": true,
+    "remarks": "File Sync - Direct"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "process": ["dota2.exe", "helldivers2.exe"],
+    "enabled": true,
+    "remarks": "Game - Direct"
+  },
+  {
+    "port": "443",
+    "network": "udp",
+    "outboundTag": "block",
+    "enabled": true,
+    "remarks": "UDP 443 - Block"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "protocol": ["bittorrent"],
+    "enabled": true,
+    "remarks": "Torrent - Direct"
+  },
+  {
+    "port": "",
+    "outboundTag": "block",
+    "domain": ["geosite:category-ads-all"],
+    "enabled": true,
+    "remarks": "Ads - block"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "ip": ["geoip:private"],
+    "enabled": true,
+    "remarks": "Private IP - Direct"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": ["geosite:private"],
+    "enabled": true,
+    "remarks": "Private domain - Direct"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": ["geosite:ir"],
+    "enabled": true,
+    "remarks": "IR Site - Direct"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "ip": ["geoip:ir"],
+    "enabled": true,
+    "remarks": "IR IP - Direct"
+  },
+  {
+    "port": "0-65535",
+    "outboundTag": "proxy",
+    "enabled": true,
+    "remarks": "Proxy - ALL"
+  }
+]
