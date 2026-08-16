@@ -2,14 +2,102 @@
   {
     "port": "",
     "outboundTag": "direct",
-    "process": ["GoogleDriveFS.exe", "OneDrive.exe"],
+    "domain": [
+      ".*steam.*.blob.core.windows.net",
+      ".*.steamcontent.com",
+      ".*.steampipe.steamcontent.com",
+      ".*.cs.steampowered.com",
+      "content1.steampowered.com",
+      "content2.steampowered.com",
+      "content3.steampowered.com",
+      "content4.steampowered.com",
+      "content5.steampowered.com",
+      "content6.steampowered.com",
+      "content7.steampowered.com",
+      "content8.steampowered.com",
+      ".*.content.steampowered.com",
+      "clientconfig.akamai.steamstatic.com",
+      "hsar.steampowered.com.edgesuite.net",
+      "steamcontent.com",
+      "client-download.steampowered.com",
+      ".*.akamai.steamstatic.com",
+      "content-origin.steampowered.com",
+      "edgecast.steamstatic.com",
+      "steam.apac.qtlglb.com.mwcloudcdn.com",
+      ".*.edgecast.steamstatic.com",
+      "cdn1-sea1.valve.net",
+      "cdn2-sea1.valve.net",
+      ".*.steam-content-dnld-1.apac-1-cdn.cqloud.com",
+      "steam.apac.qtlglb.com",
+      "edge.steam-dns.top.comcast.net",
+      "edge.steam-dns-2.top.comcast.net",
+      "steamcdn-a.akamaihd.net",
+      "steam.cdn.on.net",
+      "update5.dota2.wmsj.cn",
+      "update6.dota2.wmsj.cn",
+      "update3.dota2.wmsj.cn",
+      "update1.dota2.wmsj.cn",
+      "update4.dota2.wmsj.cn",
+      "update5.csgo.wmsj.cn",
+      "update2.csgo.wmsj.cn",
+      "update4.csgo.wmsj.cn",
+      "update3.csgo.wmsj.cn",
+      "update6.csgo.wmsj.cn",
+      "update1.csgo.wmsj.cn",
+      "st.dl.bscstorage.net",
+      "cdn.mileweb.cs.steampowered.com.8686c.com",
+      "lancache.steamcontent.com",
+      "clientconfig.akamai.steamtransparent.com",
+      "steampipe.akamaized.net",
+      ".*.cm.steampowered.com",
+      ".*.steam-content-dnld-1.eu-c1-cdn.cqloud.com",
+      "steam.naeu.qtlglb.com",
+      "steampipe-kr.akamaized.net",
+      "steam.ix.asn.au",
+      "steam.eca.qtlglb.com",
+      ".*.dist.blizzard.com;",
+      ".*.dist.blizzard.com.edgesuite.net;",
+      ".*.llnw.blizzard.com;",
+      ".*.edgecast.blizzard.com;",
+      ".*.blizzard.vo.llnwd.net;",
+      ".*.blzddist1-a.akamaihd.net;",
+      ".*.blzddist2-a.akamaihd.net;",
+      ".*.blzddist3-a.akamaihd.net;",
+      ".*.blzddist4-a.akamaihd.net;",
+      ".*.level3.blizzard.com;",
+      ".*.edge.blizzard.top.comcast.net;",
+      ".*.cdn.blizzard.com;"
+    ],
+    "enabled": true,
+    "remarks": "Game Download - Direct"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "process": [
+      "bun.exe",
+      "node.exe"
+    ],
+    "enabled": true,
+    "remarks": "nodeJS - Direct"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "process": [
+      "GoogleDriveFS.exe",
+      "OneDrive.exe"
+    ],
     "enabled": true,
     "remarks": "File Sync - Direct"
   },
   {
     "port": "",
     "outboundTag": "direct",
-    "process": ["dota2.exe", "helldivers2.exe"],
+    "process": [
+      "dota2.exe",
+      "helldivers2.exe"
+    ],
     "enabled": true,
     "remarks": "Game - Direct"
   },
@@ -23,42 +111,54 @@
   {
     "port": "",
     "outboundTag": "direct",
-    "protocol": ["bittorrent"],
+    "protocol": [
+      "bittorrent"
+    ],
     "enabled": true,
     "remarks": "Torrent - Direct"
   },
   {
     "port": "",
     "outboundTag": "block",
-    "domain": ["geosite:category-ads-all"],
+    "domain": [
+      "geosite:category-ads-all"
+    ],
     "enabled": true,
     "remarks": "Ads - block"
   },
   {
     "port": "",
     "outboundTag": "direct",
-    "ip": ["geoip:private"],
+    "ip": [
+      "geoip:private"
+    ],
     "enabled": true,
     "remarks": "Private IP - Direct"
   },
   {
     "port": "",
     "outboundTag": "direct",
-    "domain": ["geosite:private"],
+    "domain": [
+      "geosite:private"
+    ],
     "enabled": true,
     "remarks": "Private domain - Direct"
   },
   {
     "port": "",
     "outboundTag": "direct",
-    "domain": ["geosite:ir"],
+    "domain": [
+      "geosite:ir"
+    ],
     "enabled": true,
     "remarks": "IR Site - Direct"
   },
   {
     "port": "",
     "outboundTag": "direct",
-    "ip": ["geoip:ir"],
+    "ip": [
+      "geoip:ir"
+    ],
     "enabled": true,
     "remarks": "IR IP - Direct"
   },
